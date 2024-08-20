@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import {useTelegram} from "./useTg";
+import Hustler from "./ui/Name";
 import {useCallback, useEffect, useState, useRef} from "react";
 import Habs from './ui/Art';
 import Auth from './lib/auth';
@@ -42,7 +43,8 @@ export default function Home() {
           <main className={styles.main}>
 
             {Boolean(!usr) && <p>Ain't work on desktop</p>}
-             
+
+              <Hustler />
               <br />
             <h1>Cause He Do Art: </h1>
             <br />
